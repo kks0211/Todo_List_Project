@@ -19,24 +19,19 @@
 
             <EditText
                 android:id="@+id/editText"
-                android:layout_width="280dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:background="#ffffff"
+                android:layout_weight="1"
+                android:ems="10"
                 android:hint="할 일을 입력해주세요"
-                app:layout_constraintEnd_toStartOf="@+id/add_btn"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/add_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="추가"
-                />
+                android:text="추가" />
 
         </LinearLayout>
 
@@ -50,4 +45,5 @@
             tools:listitem="@layout/item_todo"></androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
+
 </LinearLayout>
